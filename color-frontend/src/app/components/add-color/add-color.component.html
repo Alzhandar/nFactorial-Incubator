@@ -1,0 +1,18 @@
+<div class="add-color-form-container">
+    <form class="add-color-form" (ngSubmit)="addColor()">
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="newColor.hex_code" name="hex_code" placeholder="#FFFFFF" required>
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" [(ngModel)]="newColor.hue" name="hue" placeholder="Hue (0-360)" required>
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" [(ngModel)]="newColor.saturation" name="saturation" placeholder="Saturation (0-100)" required>
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" [(ngModel)]="newColor.lightness" name="lightness" placeholder="Lightness (0-100)" required>
+      </div>
+      <button type="submit" class="submit-btn">Add Color</button>
+    </form>
+  </div>
+  

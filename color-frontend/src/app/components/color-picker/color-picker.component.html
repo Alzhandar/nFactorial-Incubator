@@ -1,0 +1,6 @@
+<div class="palette">
+    <div *ngFor="let color of colors" class="color-swatch" [style.background]="color.hex_code" (click)="selectColor(color)">
+      <span class="color-hex">{{ color.hex_code }}</span>
+    </div>
+  </div>
+  

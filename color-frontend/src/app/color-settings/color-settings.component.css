@@ -1,0 +1,19 @@
+.color-settings {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .slider-container {
+    margin-bottom: 1rem;
+  }
+  
+  .slider-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .slider-container input[type="range"] {
+    width: 100%;
+  }
+  

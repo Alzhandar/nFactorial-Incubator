@@ -1,0 +1,67 @@
+.palette-container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .palette-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .palette-name {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    background: #f7f7f7;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .colors-container {
+    display: flex;
+    padding: 10px;
+    background: white;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .color-swatch {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .color-swatch:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+  
+  .color-code {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-size: 0.7rem;
+    display: none;
+    transition: display 0.3s ease;
+  }
+  
+  .color-swatch:hover .color-code {
+    display: block;
+  }
+
+  .color-swatch[style*="FFF"], 
+  .color-swatch[style*="FFC"], 
+  .color-swatch[style*="FEF"], 
+  .color-swatch[style*="EFE"] .color-code {
+    color: #333;
+    text-shadow: none;
+  }
+  

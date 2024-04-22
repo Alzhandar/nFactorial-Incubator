@@ -1,0 +1,44 @@
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+  }
+  
+  .color-swatch {
+    cursor: pointer;
+    flex: 1 1 120px;
+    height: 120px;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .color-swatch:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .color-hex {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .color-swatch[style*="#FFF"], 
+  .color-swatch[style*="#FFC"], 
+  .color-swatch[style*="#FEF"], 
+  .color-swatch[style*="#EFE"], 
+  .color-swatch[style*="#FFF"] .color-hex,
+  .color-swatch[style*="#FFC"] .color-hex,
+  .color-swatch[style*="#FEF"] .color-hex,
+  .color-swatch[style*="#EFE"] .color-hex {
+    color: #333;
+    text-shadow: none;
+  }
+  

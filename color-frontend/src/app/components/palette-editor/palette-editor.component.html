@@ -1,0 +1,9 @@
+<div class="palette-container" *ngFor="let palette of palettes">
+    <div class="palette-name">{{ palette.name }}</div>
+    <div class="colors-container">
+      <div class="color-swatch" *ngFor="let color of palette.colors" [style.background]="color.hex_code" >
+        <span class="color-code">{{ color.hex_code }}</span>
+      </div>
+    </div>
+  </div>
+  
